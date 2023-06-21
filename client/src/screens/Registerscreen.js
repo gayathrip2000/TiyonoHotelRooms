@@ -105,8 +105,13 @@ function Registerscreen() {
             <input type="text" className="form-control" placeholder="password"
               value={password} onChange={(e) => { setpassword(e.target.value) }} />
 
-            <input type="text" className="form-control" placeholder="confirm password"
-              value={password} onChange={(e) => { setcpassword(e.target.value) }} />
+            <input
+              type="text"
+              className="form-control"
+              placeholder="confirm password"
+              value={cpassword} // Update the value to cpassword instead of password
+              onChange={(e) => { setcpassword(e.target.value) }}
+            />
 
             <button className='btn mt-3' onClick={register}>Register</button>
 

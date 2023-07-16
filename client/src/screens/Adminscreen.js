@@ -48,7 +48,6 @@ function Adminscreen() {
                     </TabPane>
                 </Tabs>
             </div>
-
         </div>
 
 

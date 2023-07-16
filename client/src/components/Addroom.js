@@ -90,9 +90,7 @@ function Addroom() {
 
                     <Form.Item label="Description" required value={description} onChange={(e) => { setdescription(e.target.value) }}>
                         <TextArea rows={4} />
-                    </Form.Item>
-
-              
+                    </Form.Item> 
 
                 </Form>
 

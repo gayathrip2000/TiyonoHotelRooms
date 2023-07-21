@@ -100,6 +100,9 @@ h2 {
   border: 0px solid black !important;
 }
 
+.dropdown-item {
+  color: #fafafa !important;
+ }
 .ant-picker-input input {
 
   border: none !important;
@@ -179,3 +182,29 @@ p {
   text-align: center;
 
 }
+
+.landing{
+  background-color: #000000 !important;
+  height: 100vh !important;
+  padding-top: 150px;
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

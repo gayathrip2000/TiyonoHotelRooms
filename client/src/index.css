@@ -101,7 +101,7 @@ h2 {
 }
 
 .dropdown-item {
-  color: #fafafa !important;
+  color: black !important;
  }
 .ant-picker-input input {
 
@@ -183,26 +183,14 @@ p {
 
 }
 
-.landing{
-  background-color: #000000 !important;
-  height: 100vh !important;
-  padding-top: 150px;
-  background-image: url('');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
+.btn3{
+  background-color: black !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  border-radius: 6px;
+  font-size: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

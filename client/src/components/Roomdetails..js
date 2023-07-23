@@ -85,7 +85,7 @@ function Roomdetails() {
                                 <th>Max Count</th>
                                 <th>Phone number</th>
                                 <th>Delete</th>
-                                <th>Edit Details</th>
+                                {/* <th>Edit Details</th> */}
                             </tr>
                         </thead>
 
@@ -128,14 +128,14 @@ function Roomdetails() {
                                     }}><b>DELETE</b></Tag></td>
 
 
-                                    <td>
+                                    {/* <td>
                                         <Link to="/admin/updateroom">
                                             <Tag color="darkgreen" onClick={() => {
                                                 updateroomdetails()
 
                                             }}><b>EDIT</b></Tag>
                                         </Link>
-                                    </td>
+                                    </td> */}
 
                                 </tr>
 

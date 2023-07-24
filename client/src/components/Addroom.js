@@ -131,7 +131,7 @@ function Addroom() {
                     </Form.Item>
 
 
-                    <Button type="primary" onClick={addRoom}>Add Room</Button>
+                    <Button type="primary" className='add' onClick={addRoom}>Add Room</Button>
 
 
 

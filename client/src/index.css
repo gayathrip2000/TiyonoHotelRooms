@@ -126,14 +126,14 @@ p {
 
 }
 
-.ant-btn {
+/* .ant-btn {
 
   background-color: black !important;
   position: relative !important;
   left: 79% !important;
 
 
-}
+} */
 
 .landing {
   background-color: black !important;
@@ -192,7 +192,22 @@ p {
   font-size: 15px;
 }
 
+.ant-btn.payment-modal {
+  background-color: black !important;
+  position: static;
+  left: 70% ;
+}
 
+.ant-btn.add {
+  background-color: black !important;
+  position: relative;
+  left: 70% ;
+}
 
+:where(.css-dev-only-do-not-override-sk7ap8).ant-btn-primary{
+  color: #fff;
+  background-color: black;
+  box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+}
 
 

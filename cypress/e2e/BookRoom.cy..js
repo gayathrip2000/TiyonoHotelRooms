@@ -34,13 +34,20 @@ describe('Search Room', () => {
           });
         });
       });
+      cy.wait(1000); // wait 1 seconds
+
+      cy.get('[style="float: right;"] > .btn').click()
+
+      cy.wait(1000); // wait 1 seconds
       
-      cy.on('window:alert', function(alert){
-        cy.window().then(($win)=>{
-          cy.stub($win, 'prompt').returns("pop up")
-        })
-      })
-      cy.get('span > .btn').click()
+      cy.get('.swal2-confirm').click() // click sweet alert yes button
+
+      cy.wait(1000); // wait 1 seconds
+
+      cy.get('.swal2-confirm').click() // click ok
+
     });
   });
+
+
   

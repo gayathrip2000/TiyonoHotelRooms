@@ -8,6 +8,7 @@ import StripeCheckout from 'react-stripe-checkout';
 import Swal from 'sweetalert2';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import Success from '../components/Success';
 AOS.init({
 
 });
@@ -126,18 +127,34 @@ function Bookingscreen({ match }) {
                         </div>
                         <div style={{ float: 'right' }}>
 
-
+{/* 
                             <StripeCheckout
                                 amount={totalamount * 100}
                                 token={onToken}
                                 currency='LKR'
-                                stripeKey="pk_test_51MRKt4ExB5xuiBM6MKS1ksIbadtIUcKDnEDxoOM7kYjAGhsRAPR8PiLdJc0lNOix6u7G8ZPGmmaeWs5QVy3HT08v003yZGm95q"
+                                // stripeKey="pk_test_51MRKt4ExB5xuiBM6MKS1ksIbadtIUcKDnEDxoOM7kYjAGhsRAPR8PiLdJc0lNOix6u7G8ZPGmmaeWs5QVy3HT08v003yZGm95q"
                             >
-
-
-                                <button className='btn'>Pay Now {" "}</button>
-
-                            </StripeCheckout>
+                            </StripeCheckout> */}
+                                {/* <button className='btn'>Pay Now {" "}</button> */}
+                                <button 
+                                    className='btn' 
+                                    onClick={() => {
+                                        Swal.fire({
+                                            title: 'Are you sure you want to pay?',
+                                            text: "You will be redirected to the payment page.",
+                                            icon: 'warning',
+                                            showCancelButton: true,
+                                            confirmButtonText: 'Yes, Pay Now',
+                                            cancelButtonText: 'No, Cancel'
+                                        }).then((result) => {
+                                            if (result.isConfirmed) {
+                                                Swal.fire('Proceeding to Payment...', '', 'success');  
+                                            }
+                                        });
+                                    }}
+                                >
+                                    Pay Now
+                                </button>
                         </div>
                     </div>
 

@@ -23,5 +23,8 @@
     "shey-hotel": "file:",
     "stripe": "^11.6.0",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "cypress-iframe": "^1.0.1"
   }
 }

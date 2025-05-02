@@ -1,36 +1,37 @@
+import users from '../fixtures/users';
+
 describe('Register', () => {
-  
-  //register
-  it('verify register', () => {
-    cy.visit('http://localhost:3000/')
 
-    cy.get('.active > .nav-link').click() // click register button in home
+  users.forEach((user) => {
+    it(`verify registration for ${user.name}`, () => {
+      cy.visit('http://localhost:3000/')
 
-    cy.get('[placeholder="name"]').type("Shanuka")
+      cy.get('.active > .nav-link').click() // click register button in home
 
-    cy.get('[placeholder="email"]').type("shanukayasiru27@gmail.com")
+      cy.get('[placeholder="name"]').type(user.name)
 
-    cy.get('[placeholder="password"]').type("Shanuka@123")
+      cy.get('[placeholder="email"]').type(user.email)
 
-    cy.get('[placeholder="confirm password"]').type("Shanuka@123")
+      cy.get('[placeholder="password"]').type(user.password)
 
-    cy.get('.btn').click() // Click register
+      cy.get('[placeholder="confirm password"]').type(user.password)
 
-    cy.url().should('include', 'http://localhost:3000/') // navigate home page
+      cy.get('.btn').click() // Click register
 
-  })
-
-  // login
-  it('verify Login', () => {
-    cy.visit('http://localhost:3000/')
-
-    cy.get(':nth-child(2) > .nav-link').click() //click login button in home
-
-    cy.get('[placeholder="email"]').type("shanukayasiru27@gmail.com")
-
-    cy.get('[placeholder="password"]').type("Shanuka@123")
+      cy.url().should('include', 'http://localhost:3000/') // navigate home page
+    })
     
-    cy.get('.btn').click() // click login
+    // login
+    it('verify Login', () => {
+      cy.visit('http://localhost:3000/')
+      
+      cy.get(':nth-child(2) > .nav-link').click() //click login button in home
+      
+      cy.get('[placeholder="email"]').type(user.email)
+      
+      cy.get('[placeholder="password"]').type(user.password)
+      
+      cy.get('.btn').click() // click login
+    })
   })
-
 })

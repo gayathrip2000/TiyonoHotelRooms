@@ -10,6 +10,10 @@ const dateRanges = [
     { 
       startDate: "15-05-2025", 
       endDate: "18-05-2025" 
+    },
+    { 
+      startDate: "02-05-2025", 
+      endDate: "08-05-2025" 
     }
   ];
   

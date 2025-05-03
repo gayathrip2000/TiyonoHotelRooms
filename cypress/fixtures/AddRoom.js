@@ -28,7 +28,38 @@ const rooms = [
       image1: "https://www.shutterfly.com/ideas/wp-content/uploads/2017/10/bdrmblack-29.jpg", 
       image2: "https://thehomesihavemade.com/wp-content/uploads/2022/07/Tween-Black-White-Star-Wars-Boys-Bedroom_6-768x1075.jpg", 
       image3: "https://www.architectureartdesigns.com/wp-content/uploads/2015/06/15-Colorful-Mid-Century-Kids-Room-Designs-Your-Kids-Would-Love-To-Play-In-6.jpg" 
-    }
+    },
+    { 
+      name: "Skyline Loft", 
+      price: "5000", 
+      capacity: "3", 
+      phone: "0781234567", 
+      description: "Economy room with basic facilities", 
+      image1: "", 
+      image2: "", 
+      image3: "" 
+    },
+    { 
+      name: "Skyline Loft", 
+      price: "5000", 
+      capacity: "3", 
+      phone: "07812345ffff67", 
+      description: "Economy room with basic facilities", 
+      image1: "https://www.shutterfly.com/ideas/wp-content/uploads/2017/10/bdrmblack-29.jpg", 
+      image2: "https://thehomesihavemade.com/wp-content/uploads/2022/07/Tween-Black-White-Star-Wars-Boys-Bedroom_6-768x1075.jpg", 
+      image3: "https://www.architectureartdesigns.com/wp-content/uploads/2015/06/15-Colorful-Mid-Century-Kids-Room-Designs-Your-Kids-Would-Love-To-Play-In-6.jpg" 
+    },
+    { 
+      name: "Skyline Loft", 
+      price: "-5000", 
+      capacity: "-3", 
+      phone: "07812345ffff67", 
+      description: "Economy room with basic facilities", 
+      image1: "https://www.shutterfly.com/ideas/wp-content/uploads/2017/10/bdrmblack-29.jpg", 
+      image2: "https://thehomesihavemade.com/wp-content/uploads/2022/07/Tween-Black-White-Star-Wars-Boys-Bedroom_6-768x1075.jpg", 
+      image3: "https://www.architectureartdesigns.com/wp-content/uploads/2015/06/15-Colorful-Mid-Century-Kids-Room-Designs-Your-Kids-Would-Love-To-Play-In-6.jpg" 
+    },
+
   ];
   
   export default rooms;
